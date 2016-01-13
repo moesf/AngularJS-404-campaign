@@ -1,0 +1,1304 @@
+/* animation section  */
+.animation {
+ width: 1280px;
+ overflow: hidden;
+}
+
+.obj {
+    @include backface-visibility();
+    overflow: visible;
+    position: absolute;
+}
+
+body {
+     width: 100%;
+     height: 100%;
+     z-index:9999;
+}
+
+/* section module-1a */
+.animation #module-1a {
+}
+#big-bang-whole {
+    width: 1400px;
+    height: 1400px;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#big-bang-rotate {
+    width: 1400px;
+    height: 1400px;
+    top: -245px;
+    left: -65px;
+    z-index: 2;
+}
+#big-bang {
+    background: url(module-1a/big-bang-center.png);
+    width: 565px;
+    height: 557px;
+    top: 170px;
+    left: 340px;
+    z-index: 4;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+    opacity: 0.1;
+}
+#big-bang-rays {
+    background: url(module-1a/big-bang-ray2.png);
+    width: 1400px;
+    height: 1400px;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    z-index: 1;
+}
+#big-bang-spots {
+    background: url(module-1a/big-bang-spot.png);
+    width: 1280px;
+    height: 1200px;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    z-index: 2;
+}
+#hawk {
+    width: 314px;
+    height: 255px;    
+    top: 960px;
+    left: 921px;
+    z-index: 4;
+}
+#hawking {
+    background: url(module-1a/hawking.png);
+    width: 190px;
+    height: 250px;    
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+#hawking-smoke-1 {
+    background: url(module-1a/hawking-smoke-1.png);
+    width: 130px;
+    height: 150px;    
+    top: 137px;
+    left: 115px;
+    z-index: 2;
+}
+#hawking-smoke-2 {
+    background: url(module-1a/hawking-smoke-2.png);
+    width: 130px;
+    height: 120px;    
+    top: 110px;
+    left: -90px;
+    z-index: 2;
+}
+#baby-bjorn {
+    width: 800px;
+    height: 800px;
+    top: 1121px;
+    left: 65px;
+    z-index: 5;
+}
+#baby-bubble {
+    background: url(module-1a/2001-space-back.png);
+    width: 700px;
+    height: 700px;    
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+}
+#baby {
+    background: url(module-1a/2001-baby2.png);
+    width: 340px;
+    height: 470px;    
+    top: 120px;
+    left: 176px;
+    z-index: 5;
+}
+#baby-fore {
+    background: url(module-1a/2001-baby-fore.png);
+    width: 510px;
+    height: 480px;    
+    top: 140px;
+    left: 110px;
+    z-index: 6;
+}
+#tardis {
+    background: url(module-1a/tardis.png);
+    width: 213px;
+    height: 267px;    
+    top: 1473px;
+    left: 946px;
+    z-index: 1;
+}
+#flight_of_the_navigator {
+    background: url(module-1a/flight-of-the-navigator.png);
+    width: 386px;
+    height: 207px;    
+    top: 2075px;
+    left: 177px;
+    z-index: 2;
+}
+#laika {
+    width: 278px;
+    height: 696px;    
+    top: 2185px;
+    left: 829px;
+    z-index: 3;
+}
+#laika-dog {
+    background: url(module-1a/laika-dog.png);
+    width: 278px;
+    height: 696px;    
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#laika-smoke {
+    background: url(module-1a/laika-smoke.png);
+    width: 278px;
+    height: 696px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#spacecoaster {
+    background: url(module-1a/spacecoaster.png);
+    width: 568px;
+    height: 267px;    
+    top: 2689px;
+    left: 75px;
+    z-index: 2;
+}
+#carl {
+    background: url(module-1a/carl.png);
+    width: 901px;
+    height: 854px;    
+    top: 3076px;
+    left: 94px;
+    z-index: 2;
+}
+#foreground-cosmos {
+    background: url(module-1a/foreground-cosmos.png);
+    width: 1280px;
+    height: 1800px;    
+    top: 1150px;
+    left: 20px;
+    z-index: 5;
+}
+#deathstar {
+    background: url(module-1a/deathstar.png);
+    width: 487px;
+    height: 487px;    
+    top: 3552px;
+    left: -55px;
+    z-index: 1;
+}
+#p-crew {
+    width: 140px;
+    height: 60px;    
+    top: 4156px;
+    left: 558px;
+    z-index: 1;
+}
+#peter-pan {
+    background: url(module-1a/peter-pan.png);
+    width: 140px;
+    height: 60px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#peter-pan-star-1 {
+    background: url(module-1a/peter-pan-star.png);
+    width: 18px;
+    height: 36px;    
+    top: 4608px;
+    left: 696px;
+    z-index: 1;
+}
+#peter-pan-star-2 {
+    background: url(module-1a/peter-pan-star.png);
+    width: 18px;
+    height: 36px;    
+    top: 4438px;
+    left: 328px;
+    z-index: 1;
+}
+#peter-pan-star-3 {
+    background: url(module-1a/peter-pan-star.png);
+    width: 18px;
+    height: 36px;    
+    top: 4110px;
+    left: 847px;
+    z-index: 1;
+}
+#neko-bus {
+    background: url(module-1a/neko-close2.png);
+    width: 214px;
+    height: 213px;    
+    top: 4296px;
+    left: 907px;
+    z-index: 2;
+}
+#neko-blink {
+    background: url(module-1a/neko-open2.png);
+    width: 214px;
+    height: 213px;    
+    top: 4296px;
+    left: 907px;
+    z-index: 3;
+    opacity: 0;
+}
+#godzilla {
+    width: 782px;
+    height: 720px;    
+    top: 4654px;
+    left: 245px;
+    z-index: 1;
+}
+#godzilla-monster {
+    background: url(module-1a/godzilla-monster.png);
+    width: 782px;
+    height: 720px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#godzilla-rawr {
+    background: url(module-1a/godzilla-rawr.png);
+    width: 782px;
+    height: 720px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#godzilla-flame-01 {
+    background: url(module-1a/godzilla-flame-01.png);
+    width: 782px;
+    height: 720px;    
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+#godzilla-flame-02 {
+    background: url(module-1a/godzilla-flame-02.png);
+    width: 782px;
+    height: 720px;    
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#godzilla-flame-03 {
+    background: url(module-1a/godzilla-flame-03.png);
+    width: 782px;
+    height: 720px;
+    top: 0px;
+    left: 0px;    
+    z-index: 1;
+}
+#beetlejuice {
+    width: 482px;
+    height: 508px;    
+    top: 5157px;
+    left: 4px;
+    z-index: 2;
+}
+#beetlejuice-house {
+    background: url(module-1a/beetljuice-house.png);
+    width: 482px;
+    height: 508px;    
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+}
+#beetlejuice-sando-1 {
+    background: url(module-1a/beetljuice-sando-1.png);
+    width: 482px;
+    height: 508px;    
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#beetlejuice-sando-2 {
+    background: url(module-1a/beetljuice-sando-2.png);
+    width: 482px;
+    height: 508px;    
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#beetlejuice-sando-3 {
+    background: url(module-1a/beetljuice-sando-3.png);
+    width: 482px;
+    height: 508px;    
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#mountains-magesty {
+    width: 1280px;
+    height: 1800px;    
+    top: 4000px;
+    left: 0px;
+    z-index: 1;
+}
+#mountains {
+    background: url(module-1a/mountains.png);
+    width: 1280px;
+    height: 1800px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#mist-01 {
+    background: url(module-1a/mist-01.png);
+    width: 265px;
+    height: 45px;    
+    top: 300px;
+    left: 1104px;
+    z-index: 2;
+}
+#mist-02 {
+    background: url(module-1a/mist-02.png);
+    width: 338px;
+    height: 130px;    
+    top: 480px;
+    left: 855px;
+    z-index: 2;
+}
+#mist-03 {
+    background: url(module-1a/mist-03.png);
+    width: 353px;
+    height: 171px;    
+    top: 110px;
+    left: 956px;
+    z-index: 2;
+}
+#mist-04 {
+    background: url(module-1a/mist-04.png);
+    width: 307px;
+    height: 62px;    
+    top: 750px;
+    left: -40px;
+    z-index: 2;
+}
+#mist-05 {
+    background: url(module-1a/mist-05.png);
+    width: 346px;
+    height: 90px;    
+    top: 504px;
+    left: -63px;
+    z-index: 2;
+}
+#mist-06 {
+    background: url(module-1a/mist-06.png);
+    width: 463px;
+    height: 239px;    
+    top: 86px;
+    left: -30px;
+    z-index: 2;
+}
+#beetlejuice-road {
+    background: url(module-1a/beetlejuice-road.png);
+    width: 1280px;
+    height: 460px;    
+    top: 5340px;
+    left: 0px;
+    z-index:1;
+}
+
+/* section module-1b */
+.animation #module-1b {
+}
+#falcor {
+    background: url(module-1b/falcor.jpg);
+    width: 1280px;
+    height: 500px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#tip-top-buildings {
+    background: url(module-1b/tip-top-buildings.png);
+    width: 1280px;
+    height: 500px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#midget {
+    background: url(module-1b/midget.png);
+    width: 74px;
+    height: 154px;    
+    top: 658px;
+    left: 312px;
+    z-index: 2;
+}
+#totoro {
+    width: 197px;
+    height: 324px;    
+    top: 595px;
+    left: 1058px;
+    z-index: 2;
+}
+#totoro-close {
+    background: url(module-1b/totoro-close.png);
+    width: 197px;
+    height: 324px;    
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#totoro-blink {
+    background: url(module-1b/totoro-open.png);
+    width: 197px;
+    height: 324px;    
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+#totoro-ears {
+    background: url(module-1b/totoro-ears.png);
+    width: 197px;
+    height: 324px;    
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+#umbrella-moves {
+    width: 197px;
+    height: 324px;    
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+#totoro-umbrella-back {
+    background: url(module-1b/totoro-umbrella-back.png);
+    width: 197px;
+    height: 324px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#totoro-umbrella-front {
+    background: url(module-1b/totoro-umbrella-front.png);
+    width: 197px;
+    height: 324px;    
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#soot-sprites  {
+    width: 316px;
+    height: 320px;    
+    top: 842px;
+    left: 962px;
+    z-index: 2;
+}
+#soot-sprites-01  {
+    background: url(module-1b/soot-sprites-master.png);
+    width: 48px;
+    height: 46px;    
+    top: 80px;
+    left: 71px;
+    z-index: 2;
+    opacity: 0;
+}
+#soot-sprites-02  {
+    background: url(module-1b/soot-sprites-medium.png);
+    width: 32px;
+    height: 31px;
+    top: 60px;
+    left: 95px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-03  {
+    background: url(module-1b/soot-sprites-small.png);
+    width: 26px;
+    height: 26px;
+    top: 126px;
+    left: 91px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-04  {
+    background: url(module-1b/soot-sprites-medium.png);
+    width: 32px;
+    height: 31px;
+    top: 145px;
+    left: 83px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-05  {
+    background: url(module-1b/soot-sprites-small.png);
+    width: 26px;
+    height: 26px;
+    top: 175px;
+    left: 65px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-06  {
+    background: url(module-1b/soot-sprites-small.png);
+    width: 26px;
+    height: 26px;
+    top: 177px;
+    left: 95px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-07  {
+    background: url(module-1b/soot-sprites-small.png);
+    width: 26px;
+    height: 26px;
+    top: 196px;
+    left: 91px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-08  {
+    background: url(module-1b/soot-sprites-medium.png);
+    width: 32px;
+    height: 31px;
+    top: 230px;
+    left: 95px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-09  {
+    background: url(module-1b/soot-sprites-medium.png);
+    width: 32px;
+    height: 31px;
+    top: 258px;
+    left: 90px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-010  {
+    background: url(module-1b/soot-sprites-master.png);
+    width: 48px;
+    height: 46px;    
+    top: 279px;
+    left: 78px;
+    z-index: 2;
+    opacity: 0;
+}
+#soot-sprites-011  {
+    background: url(module-1b/soot-sprites-medium.png);
+    width: 32px;
+    height: 31px;
+    top: 291px;
+    left: 53px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-012  {
+    background: url(module-1b/soot-sprites-small.png);
+    width: 26px;
+    height: 26px;
+    top: 256px;
+    left: 41px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-013  {
+    background: url(module-1b/soot-sprites-small.png);
+    width: 26px;
+    height: 26px;
+    top: 300px;
+    left: 33px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-014  {
+    background: url(module-1b/soot-sprites-medium.png);
+    width: 32px;
+    height: 31px;
+    top: 289px;
+    left: 0px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-015  {
+    background: url(module-1b/soot-sprites-small.png);
+    width: 26px;
+    height: 26px;
+    top: 0px;
+    left: 290px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-015  {
+    background: url(module-1b/soot-sprites-small.png);
+    width: 26px;
+    height: 26px;
+    top: 0px;
+    left: 290px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-016  {
+    background: url(module-1b/soot-sprites-small.png);
+    width: 26px;
+    height: 26px;
+    top: 38px;
+    left: 270px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-017  {
+    background: url(module-1b/soot-sprites-small.png);
+    width: 26px;
+    height: 26px;
+    top: 59px;
+    left: 265px;
+    z-index: 3;
+    opacity: 0;
+}
+#soot-sprites-018  {
+    background: url(module-1b/soot-sprites-small.png);
+    width: 26px;
+    height: 26px;
+    top: 47px;
+    left: 287px;
+    z-index: 3;
+    opacity: 0;
+}
+#laser  {
+    background: url(module-1b/laser4.png);
+    width: 440px;
+    height: 86px;    
+    top: 1139px;
+    left: 140px;
+    z-index: 2;
+}
+#slimer  {
+    background: url(module-1b/slimer.png);
+    width: 297px;
+    height: 225px;    
+    top: 1097px;
+    left: 326px;
+    z-index: 3;
+}
+#harold  {
+    background: url(module-1b/harold.png);
+    width: 146px;
+    height: 326px;    
+    top: 1508px;
+    left: 933px;
+    z-index: 2;
+}
+/* section module-1c */
+.animation #module-1c {
+}
+#rearview  {
+    background: url(module-1c/rearview.png);
+    width: 800px;
+    height: 950px;    
+    top: 65px;
+    left: -55px;
+    z-index: 2;
+}
+#music-notes  {
+    background: url(module-1c/music-notes.png);
+    width: 96px;
+    height: 43px;    
+    top: 349px;
+    left: 975px;
+    z-index: 2;
+}
+#royal-tenenbaums  {
+    background: url(module-1c/royal-tenenbaums.png);
+    width: 223px;
+    height: 249px;    
+    top: 811px;
+    left: 52px;
+    z-index: 4;
+}
+#smoke-1  {
+    background: url(module-1c/smoke-1.png);
+    width: 207px;
+    height: 147px;    
+    top: 772px;
+    left: 928px;    
+    z-index: 2;
+}
+#smoke-2  {
+    background: url(module-1c/smoke-2.png);
+    width: 173px;
+    height: 130px;    
+    top: 768px;
+    left: 1024px;
+    z-index: 2;
+}
+#smoke-3  {
+    background: url(module-1c/smoke-3.png);
+    width: 259px;
+    height: 109px;    
+    top: 771px;
+    left: 788px;
+    z-index: 2;
+}
+
+/* section module-1d*/
+.animation #module-1d {
+    height: 1025px;
+}
+#raphael-turtle  {
+    background: url(module-1d/raphael-turtle.png);
+    width: 40px;
+    height: 17px;    
+    top: 177px;
+    left: 74px;
+    z-index: 2;
+}
+#wave-1  {
+    background: url(module-1d/wave-1.png);
+    width: 1240px;
+    height: 190px;    
+    top: 158px;
+    left: 22px;
+    z-index: 2;
+}
+#kurt-russell  {
+    background: url(module-1d/kurt-russell.png);
+    width: 331px;
+    height: 179px;    
+    top: 18px;
+    left: 730px;
+    z-index: 3;
+}
+#wave-2  {
+    background: url(module-1d/wave-2.png);
+    width: 1280px;
+    height: 220px;    
+    top: 138px;
+    left: 4px;
+    z-index: 2;
+}
+#goonies  {
+    width: 462px;
+    height: 595px;    
+    top: 401px;
+    left: 403px;
+    z-index: 2;
+}
+#goonies-piano  {
+    background: url(module-1d/goonies-piano.png);
+    width: 462px;
+    height: 595px;    
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#goonies-skull-01  {
+    background: url(module-1d/goonies-skull-01.png);
+    width: 54px;
+    height: 71px;    
+    top: 165px;
+    left: 202px;
+    z-index: 3;
+}
+#goonies-skull-02  {
+    background: url(module-1d/goonies-skull-02.png);
+    width: 48px;
+    height: 62px;    
+    top: 126px;
+    left: 50px;
+    z-index: 3;
+}
+#goonies-skull-03  {
+    background: url(module-1d/goonies-skull-03.png);
+    width: 53px;
+    height: 61px;    
+    top: 88px;
+    left: 362px;
+    z-index: 3;
+}
+
+/* section module-1e */
+.animation #module-1e {
+}
+#club-spotlight  {
+    width: 1280px;
+    height: 1429px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#spotlight-01  {
+    background: url(module-1e/spotlight-01c.png);
+    width: 1280px;
+    height: 1429px;    
+    top: -165px;
+    left: 0px;
+    z-index: 1;
+}
+#spotlight-02  {
+    background: url(module-1e/spotlight-02c.png);
+    width: 1280px;
+    height: 1429px;    
+    top: -165px;
+    left: 0px;
+    z-index: 2;
+}
+#spotlight-03  {
+    background: url(module-1e/spotlight-03c.png);
+    width: 1280px;
+    height: 1429px;    
+    top: -165px;
+    left: 0px;
+    z-index: 3;
+}
+#spotlight-04  {
+    background: url(module-1e/spotlight-04c.png);
+    width: 1280px;
+    height: 1429px;    
+    top: -165px;
+    left: 0px;
+    z-index: 4;
+}
+#newrom-1  {
+    width: 105px;
+    height: 224px;    
+    top: 70px;
+    left: 1136px;
+    z-index: 2;
+}
+#newrom1-head  {
+    background: url(module-1e/newrom1-head.png);
+    width: 105px;
+    height: 224px;    
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#newrom1-body  {
+    background: url(module-1e/newrom1-body.png);
+    width: 105px;
+    height: 224px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#newrom-2  {
+    width: 140px;
+    height: 175px;    
+    top: 214px;
+    left: 988px;
+    z-index: 2;
+}
+#newrom2-head  {
+    /*background: url(module-1e/newrom2-head.png);*/
+    width: 140px;
+    height: 175px;     
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#newrom2-arms  {
+    background: url(module-1e/newrom2-arms2.png);
+    width: 140px;
+    height: 175px;     
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+#newrom2-body  {
+    background: url(module-1e/newrom2-body.png);
+    width: 140px;
+    height: 175px;   
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#newrom-3  {
+    width: 141px;
+    height: 301px;    
+    top: 311px;
+    left: 808px;
+    z-index: 2;
+}
+#newrom3-head  {
+    background: url(module-1e/newrom3-head.png);
+    width: 141px;
+    height: 301px;   
+    top: 4px;
+    left: 0px;
+    z-index: 2;
+}
+#newrom3-body  {
+    background: url(module-1e/newrom3-body.png);
+    width: 141px;
+    height: 301px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#nomidancerman  {
+    width: 113px;
+    height: 323px;    
+    top: 484px;
+    left: 308px;
+    z-index: 2;
+}
+#nomidancerman-body  {
+    background: url(module-1e/nomidancerman-body.png);
+    width: 113px;
+    height: 323px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#nomidancerman-arms  {
+    background: url(module-1e/nomidancerman-arms.png);
+    width: 113px;
+    height: 323px;    
+    top: 2px;
+    left: 1px;
+    z-index: 2;
+}
+#nomidancerman-head  {
+    background: url(module-1e/nomidancerman-head.png);
+    width: 113px;
+    height: 323px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#nomidancerwoman  {
+    width: 142px;
+    height: 264px;    
+    top: 542px;
+    left: 28px;
+    z-index: 2;
+}
+#nomidancerwoman-body  {
+    background: url(module-1e/nomidancerwoman-body.png);
+    width: 142px;
+    height: 264px;     
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#nomidancerwoman-arms  {
+    background: url(module-1e/nomidancerwoman-arms.png);
+    width: 142px;
+    height: 264px;     
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#nomidancerwoman-head  {
+    background: url(module-1e/nomidancerwoman-head.png);
+    width: 142px;
+    height: 264px;     
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#jimjar-smoke  {
+    background: url(module-1e/jimjar-smoke.png);
+    width: 19px;
+    height: 58px;    
+    top: 958px;
+    left: 242px;
+    z-index: 2;
+}
+#ishtar  {
+    background: url(module-1e/ishtar.png);
+    width: 134px;
+    height: 132px;    
+    top: 1761px;
+    left: 853px;
+    z-index: 2;
+}
+
+/* section module-1f */
+.animation #module-1f {
+}
+#moleman  {
+    width: 151px;
+    height: 118px;    
+    top: 465px;
+    left: 829px;
+    z-index: 2;
+}
+#moleman-arm  {
+    background: url(module-1f/moleman-arm.png);
+    width: 100px;
+    height: 60px;    
+    top: 0px;
+    left: -20px;
+    z-index: 1;
+}
+#moleman-body  {
+    background: url(module-1f/moleman-body.png);
+    width: 120px;
+    height: 140px;    
+    top: -6px;
+    left: 28px;
+    z-index: 2;
+}
+#medicine  {
+    background: url(module-1f/medicine.png);
+    width: 37px;
+    height: 21px;    
+    top: 550px;
+    left: 170px;
+    z-index: 2;
+}
+#mosquito  {
+    background: url(module-1f/mosquito.png);
+    width: 107px;
+    height: 119px;    
+    top: 130px;
+    left: 195px;
+    z-index: 3;
+}
+
+/* section module-1g */
+.animation #module-1g {
+}
+#night-of-the-comet  {
+    width: 378px;
+    height: 209px;    
+    top: 288px;
+    left: 351px;
+    z-index: 2;
+}
+#night-of-the-comet-blood  {
+    background: url(module-1g/night-of-the-comet-blood.png);
+    width: 378px;
+    height: 209px;    
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#night-of-the-comet-bullet  {
+    background: url(module-1g/night-of-the-comet-bullet.png);
+    width: 378px;
+    height: 209px;    
+    top: 0px;
+    left: 30px;
+    z-index: 2;
+}
+#night-of-the-comet-girl  {
+    background: url(module-1g/night-of-the-comet-girl.png);
+    width: 378px;
+    height: 209px;    
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#evil-dead  {
+    width: 361px;
+    height: 274px;    
+    top: 222px;
+    left: 829px;
+    z-index: 1;
+}
+#evil-dead-chainsaw  {
+    z-index: 2;
+    top:10px;
+    left:12px;
+}
+#evil-dead-01  {
+    background: url(module-1g/evil-dead-01.png);
+    width: 361px;
+    height: 274px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#evil-dead-02  {
+    background: url(module-1g/evil-dead-02.png);
+    width: 361px;
+    height: 274px;    
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+#evil-dead-arm  {
+    background: url(module-1g/evil-dead-arm.png);
+    width: 361px;
+    height: 274px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#evil-dead-04  {
+    background: url(module-1g/evil-dead-04.png);
+    width: 361px;
+    height: 274px;    
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+#evil-dead-05  {
+    background: url(module-1g/evil-dead-05.png);
+    width: 361px;
+    height: 274px;    
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+#evil-dead-06  {
+    background: url(module-1g/evil-dead-06b.png);
+    width: 361px;
+    height: 274px;    
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+/* section module-1h */
+.animation #module-1h {
+}
+#bender-blink  {
+    background: url(module-1h/bender-blink.png);
+    width: 39px;
+    height: 30px;    
+    top: 300px;
+    left: 117px;
+    z-index: 2;
+}
+#BFF  {
+    background: url(module-1h/BFF.png);
+    width: 82px;
+    height: 87px;    
+    top: 255px;
+    left: 1084px;
+    z-index: 2;
+}
+
+/* section module-1i */
+.animation #module-1i {
+}
+#underwater-gradient  {
+    background: url(module-1i/underwater-gradient.png);
+    width: 1280px;
+    height: 1480px;    
+    top: 480px;
+    left: 0px;
+    z-index: 2;
+}
+#rainbow-seahorse  {
+    background: url(module-1i/rainbow-seahorse.png);
+    width: 100px;
+    height: 100px;    
+    top: 709px;
+    left: 64px;
+    z-index: 2;
+}
+#submarine  {
+    width: 900px;
+    height: 500px;    
+    top: 660px;
+    left: 360px;
+    z-index: 2;
+}
+#belafonte  {
+    background: url(module-1i/belafonte-sub.png);
+    width: 500px;
+    height: 220px;    
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#belafonte-light  {
+    background: url(module-1i/belafonte-light.png);
+    width: 440px;
+    height: 500px;    
+    top: -150px;
+    left: -360px;
+    z-index: 1;
+    opacity: 0;
+}
+#underwater-wave  {
+    background: url(module-1i/underwater-wave2.png);
+    width: 2643px;
+    height: 1395px;    
+    top: 463px;
+    left: -220px;
+    z-index: 1;
+}
+#sharkmaid-lochness  {
+    background: url(module-1i/sharkmaid-lochness.png);
+    width: 306px;
+    height: 232px;    
+    top: 328px;
+    left: 1287px;
+    z-index: 2;
+}
+#sharkmoove  {   
+    top: 328px;
+    left: 787px;
+    z-index: 3;
+}
+#wave-moove  {   
+
+    z-index: 2;
+}
+#creatureFTBL  {
+    background: url(module-1i/creatureFTBL.png);
+    width: 251px;
+    height: 121px;    
+    top: 1118px;
+    left: -78px;
+    z-index: 1;
+}
+#little-mermaid  {
+    background: url(module-1i/little-mermaid.png);
+    width: 196px;
+    height: 153px;    
+    top: 1297px;
+    left: -7px;
+    z-index: 1;
+}
+#league  {
+    background: url(module-1i/20000-league.png);
+    width: 284px;
+    height: 355px;    
+    top: 1448px;
+    left: 1068px;
+    z-index: 1;
+}
+#nothing-to-see-here-01  {
+    background: url(module-1i/nothing-to-see-here-01.png);
+    width: 1280px;
+    height: 840px;    
+    top: 1026px;
+    left: 0px;
+    z-index: 2;
+    opacity: 1;
+}
+#nothing-to-see-here-02  {
+    background: url(module-1i/nothing-to-see-here-02.png);
+    width: 1280px;
+    height: 840px;    
+    top: 1026px;
+    left: 0px;
+    z-index: 3;
+    opacity: 0;
+}
+#nothing-to-see-here-03  {
+    background: url(module-1i/nothing-to-see-here-03.png);
+    width: 1280px;
+    height: 840px;    
+    top: 1026px;
+    left: 0px;
+    z-index: 4;
+    opacity: 1;
+}
+#MIB  {
+    background: url(module-1i/MIB.png);
+    width: 1280px;
+    height: 700px;    
+    top: 1409px;
+    left: 0px;
+    z-index: 4;
+}

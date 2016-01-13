@@ -1,0 +1,563 @@
+<!-- quiz.html -->
+<div class="quiz">  
+	<script>
+		$(window).scrollTop(0);
+        var url = location.href;
+        if ($.cookie('submitted') == 'true') {
+            url = url+'again';
+            location.assign(url);
+        }
+	</script>
+    <div class="score">
+        <div class='scoreboard'>
+            <input type="hidden" ng-model="scoreboard.answered">
+            <p><span id='score'>0</span> / 60 questions</p>
+            <ul>
+                <li class='' id='{{hearts[$index]}}' ng-repeat='heart in hearts'></li>
+            </ul>
+        </div>
+        <div class='score_words'>
+            <div id='box1'>
+                <p></p>
+            </div>
+            <div id='box2'>
+                <p>Don’t be square and quit now.<br>Keep going or be lame and</p>
+                <a href="#" class="submit"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <section id="module-1a">   
+        <div id="top-right"></div>     	
+        <h1 class="aria">Quiz Page</h1>
+
+        <div class='again_wording'>
+YOU’RE ALREADY ENTERED TO WIN,<br>
+SO THIS ROUND IS JUST FOR FUNSIES
+
+        </div>
+        
+        <div id='nav-arrow'></div>
+
+        <div anchor class='qa' id='qa1'>
+            <ul class="q" index='0'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[0].options'>{{option}}</li>
+            </ul>
+        </div>
+
+        <div anchor class='qa' id='qa2'>
+            <ul class="q" index='1'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[1].options'>{{option}}</li>
+            </ul>            
+        </div>
+
+        <div anchor class='qa' id='qa3'>
+            <ul class="q" index='2'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[2].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa4'>
+            <ul class="q" index='3'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[3].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa5'>
+            <ul class="q" index='4'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[4].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa6'>
+            <ul class="q" index='5'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[5].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa7'>
+            <ul class="q" index='6'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[6].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa8'>
+            <ul class="q" index='7'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[7].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa9'>
+            <ul class="q" index='8'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[8].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa10'>
+            <ul class="q" index='9'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[9].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa11'>
+            <ul class="q" index='10'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[10].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa12'>
+            <ul class="q" index='11'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[11].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa13'>
+            <ul class="q" index='12'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[12].options'>{{option}}</li>
+            </ul>                
+        </div>
+
+    </section>
+
+    <section id="module-1b">        	
+        <div anchor class='qa' id='qa14'>
+            <ul class="q" index='13'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[13].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa15'>
+            <ul class="q" index='14'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[14].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa16'>
+            <ul class="q" index='15'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[15].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa17'>
+            <ul class="q" index='16'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[16].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa18'>
+            <ul class="q" index='17'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[17].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa19'>
+            <ul class="q" index='18'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[18].options'>{{option}}</li>
+            </ul>                
+        </div>        
+    </section>
+
+    <section id="module-1c">        	
+        <div anchor class='qa' id='qa20'>
+            <ul class="q" index='19'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[19].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa21'>
+            <ul class="q" index='20'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[20].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa22'>
+            <ul class="q" index='21'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[21].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa23'>
+            <ul class="q" index='22'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[22].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa24'>
+            <ul class="q" index='23'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[23].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa25'>
+            <ul class="q" index='24'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[24].options'>{{option}}</li>
+            </ul>                
+        </div>
+    </section>
+
+    <section id="module-1d">        	
+        <div anchor class='qa' id='qa26'>
+            <ul class="q" index='25'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[25].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa27'>
+            <ul class="q" index='26'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[26].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa28'>
+            <ul class="q" index='27'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[27].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa29'>
+            <ul class="q" index='28'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[28].options'>{{option}}</li>
+            </ul>                
+        </div>
+    </section>
+
+    <section id="module-1e">        	
+        <div anchor class='qa' id='qa30'>
+            <ul class="q" index='29'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[29].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa31'>
+            <ul class="q" index='30'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[30].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa32'>
+            <ul class="q" index='31'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[31].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa33'>
+            <ul class="q" index='32'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[32].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa34'>
+            <ul class="q" index='33'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[33].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa35'>
+            <ul class="q" index='34'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[34].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa36'>
+            <ul class="q" index='35'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[35].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa37'>
+            <ul class="q" index='36'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[36].options'>{{option}}</li>
+            </ul>                
+        </div>
+    </section>
+
+    <section id="module-1f">        	
+        <div anchor class='qa' id='qa38'>
+            <ul class="q" index='37'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[37].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa39'>
+            <ul class="q" index='38'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[38].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa40'>
+            <ul class="q" index='39'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[39].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa41'>
+            <ul class="q" index='40'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[40].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa42'>
+            <ul class="q" index='41'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[41].options'>{{option}}</li>
+            </ul>                
+        </div>        
+    </section>
+
+    <section id="module-1g">        	
+        <div anchor class='qa' id='qa43'>
+            <ul class="q" index='42'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[42].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa44'>
+            <ul class="q" index='43'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[43].options'>{{option}}</li>
+            </ul>                
+        </div>  
+    </section>
+
+    <section id="module-1h">        	
+        <div anchor class='qa' id='qa45'>
+            <ul class="q" index='44'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[44].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa46'>
+            <ul class="q" index='45'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[45].options'>{{option}}</li>
+            </ul>                
+        </div>  
+        <div anchor class='qa' id='qa47'>
+            <ul class="q" index='46'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[46].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa48'>
+            <ul class="q" index='47'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[47].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa49'>
+            <ul class="q" index='48'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[48].options'>{{option}}</li>
+            </ul>                
+        </div>
+    </section>   
+
+    <section id="module-1i">        	
+        <div anchor class='qa' id='qa50'>
+            <ul class="q" index='49'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[49].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa51'>
+            <ul class="q" index='50'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[50].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa52'>
+            <ul class="q" index='51'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[51].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa53'>
+            <ul class="q" index='52'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[52].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa54'>
+            <ul class="q" index='53'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[53].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa55'>
+            <ul class="q" index='54'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[54].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa56'>
+            <ul class="q" index='55'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[55].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa57'>
+            <ul class="q" index='56'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[56].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa58'>
+            <ul class="q" index='57'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[57].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa59'>
+            <ul class="q" index='58'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[58].options'>{{option}}</li>
+            </ul>                
+        </div>
+        <div anchor class='qa' id='qa60'>
+            <ul class="q" index='59'>
+                <li question index='{{$index}}' ng-repeat='option in quizzes[59].options'>{{option}}</li>
+            </ul>                
+        </div>
+    </section>   
+
+    <section id="module-1k">
+        <header class='before-submit'>
+            <h2>How did you do?</h2>
+            <p>Submit below to find out</p>
+        </header>
+
+        <header class='after-submit'>
+            <h2>CONGRATULATIONS</h2>
+
+            <h3 class='level'></h3>
+            <p class='level-desc'></p>
+                <ul>
+                    <li><a id='share-now' href='' title='share now'></a></li>
+                    <li><a id='play-again' href='#quizagain' title='play again'></a></li>
+                </ul>
+            
+            <div id='social-sharing'>
+                <a href="#" class="close"></a> 
+                <div class='content'>
+                    <!-- <h2>CONGRATULATIONS</h2> -->
+                    <h3 class='level'></h3>
+                    <p class='level-desc'>
+                    </p>              
+                </div>
+                <ul>
+                    <li><a id='share-twitter' rel="nofollow" href="#" onclick="return shareOnTwitter()" title='share on twitter'></a></li>
+                    <li><a id='share-facebook' rel="nofollow" href="#" onclick="return shareOnFacebook()" title='share on facebook'></a></li>
+                    <li><a id='share-google_plus' rel="nofollow" href="#" onclick="return shareOnGooglePlus()" title='share on google plus'></a></li>
+                </ul>                         
+            </div>
+
+            <script>
+
+                //social sharing
+                function shareOnFacebook() {
+                  var fb_url = 'http://goo.gl/b7GEUL';
+                  var fb_title = "Pop Culture Quiz";
+                  
+                  var new_url = "http://www.facebook.com/sharer.php?u=" + encodeURIComponent(fb_url) + "&t=" + encodeURIComponent(fb_title);
+                  window.open(new_url,'sharer','toolbar=0,status=0,width=626,height=436');
+                  return false;
+                }
+
+                function shareOnTwitter() {
+                  var twit_url = 'http://bonfirelabs.com/404';
+                  var twit_title = "Can you beat my pop culture dominance? There are prizes!";
+
+                  var new_url = "https://twitter.com/share?url=" + encodeURIComponent(twit_url) + "&text=" + encodeURIComponent(twit_title) + "&hashtags=" + encodeURIComponent('BonfireLabs,ImNoFool');
+                  window.open(new_url,'sharer','toolbar=0,status=0,width=626,height=436');
+                  return false;
+                }
+
+                function shareOnGooglePlus() {
+                  var g_url = 'http://goo.gl/b7GEUL';
+                  var g_title = "Share the 404 Fun on 4.01";
+                  var new_url = "https://plus.google.com/share?url=" + encodeURIComponent(g_url) + "&text=" + encodeURIComponent(g_title);
+                  window.open(new_url,'sharer','toolbar=0,status=0,width=626,height=436');
+                  return false;
+                }
+            </script>
+
+        </header>
+        <div class='col1'>
+            <div id="form_curtain">
+                <a href="" class="close"></a>                
+                <p class="after-submit">
+                 THANKS FOR PLAYING!<br> TRY AGAIN 
+                IF YOU THINK<br> 
+                YOU CAN GET <br> 
+                A BETTER SCORE!
+                </p>
+                <p class='error'>
+                    DATA DOES<br>NOT COMPUTE!<br> TRY ENTERING YOUR<br> DETAILS AGAIN.
+                </p>
+                <p class='warning'>
+                    Hey! You didn't answer<br>enough questions. <br>Just enter five right answers.
+                </p>
+            </div>
+
+            <form id='bflForm' name="form" ng-submit="submit()" novalidate autocomplete="off">
+
+                <input type=hidden name="oid" value="00Di0000000JORN" autocomplete="off">
+                <input type=hidden id="lead_source" name="lead_source" value="404 Page" autocomplete="off">
+                <input type=hidden class='404_Answer_Total' id="00Ni000000FirY0" name="00Ni000000FirY0" size="20" value='' autocomplete="off" />
+
+                <input type=hidden name="retURL" value="http://bonfirelabs.com/assets/404/thanks.html" autocomplete="off">
+                <input type=hidden name="00Ni000000FirY0" id="00Ni000000FirY0" size="20" autocomplete="off">
+
+                <input type="hidden" name="debug" value=1 autocomplete="off">
+                <input type="hidden" name="debugEmail" value="jens@bonfirelabs.com" autocomplete="off">
+
+                <label for="first_name">First Name</label>
+                <input placeholder='First Name' id="first_name" maxlength="40" name="first_name" size="20" type="text" ng-model="user.first_name" ng-pattern="/^(\D)+$/" required tabindex="0" autocomplete="off" />
+
+                <label for="last_name">Last Name</label>
+                <input placeholder='Last Name'  id="last_name" maxlength="80" name="last_name" size="20" type="text" ng-model="user.last_name" ng-pattern="/^(\D)+$/" required tabindex="0" autocomplete="off" />
+
+                <label for="company">Company</label><input placeholder='Company' id="company" maxlength="40" name="company" size="20" type="text" ng-model="user.company" required tabindex="0" autocomplete="off" />
+
+                <label for="email">Email</label><input placeholder='Email' id="email" maxlength="80" name="email" size="20" type="email" ng-model="user.email" required tabindex="0" autocomplete="off" />
+
+                <label for="confirmEmail">Confirm Email</label><input placeholder='Confirm Email' id="confirmEmail" maxlength="80" name="confirmEmail" size="20" type="email" ng-model="user.confirmEmail" required tabindex="0" autocomplete="off" />
+
+                <label for="phone">Phone</label>
+                <input placeholder='Phone xxx.xxx.xxxx' id="phone" maxlength="40" name="phone" size="20" type="text" ng-model="user.phone" ng-pattern="/^[(]{0,1}[0-9]{3}[)\.\- ]{0,1}[0-9]{3}[\.\- ]{0,1}[0-9]{4}$/" ng-minlength=10 required tabindex="0" autocomplete="off"  />
+
+                <button></button>
+                
+            </form>
+
+        </div>
+        <div class='col2'>
+
+
+        </div>
+        <div class='col3'>
+            <a id='enter-site' href="/home" target='_blank' title='Go to homepage'></a>
+            <a id='logo' href="/home" target='_blank' title='Go to homepage'></a>
+
+        </div>       
+  	
+    </section>
+    <div id="btm-anchor"></div>     
+</div>
+
+<!-- <script src="assets/js/quiz-control.js"></script>  -->
+
+<script>
+(function($) { 
+          
+    $(window).scroll(function() {
+        var s = $(".score");
+        var windowpos = $(window).scrollTop();
+        if (windowpos > 300) {
+            s.addClass("scrolled");
+        } 
+        if (windowpos > 15503) {
+            s.removeClass("scrolled");
+        }
+    });
+    var rEdge = $('#top-right').offset().left;
+    $('.score').css('left',rEdge-324);    
+    $( window ).resize(function(){
+        rEdge = $('#top-right').offset().left;
+        $('.score').css('left',rEdge-324);
+    })
+    $('.score_words a.submit').on('click', function(e){
+        var windowpos = $(window).scrollTop();//16251 
+        console.log(windowpos) 
+        e.preventDefault();
+        if (windowpos > 300) {$.scrollTo($('#module-1k'), 4500 );}
+        if (windowpos > 2300) {$.scrollTo($('#module-1k'), 3500 );}
+        if (windowpos > 5500) {$.scrollTo($('footer'), 3000 );}
+        if (windowpos > 8700) {$.scrollTo($('footer'), 2500 );}
+        if (windowpos > 11000) {$.scrollTo($('footer'), 1000 );}
+        if (windowpos > 15000) {$.scrollTo($('footer'), 500 );}
+    })
+
+    /* progressive loading  */
+    sectionIds = ['b', 'c', 'd', 'e', 'f', 'g', 'h', 'i','k'];
+    var i = 0;
+    var t=setInterval(function(){
+        if (i==sectionIds.length) clearInterval(t);
+        $('#module-1'+sectionIds[i]).addClass('loaded');
+        i++
+    }, 1000)
+
+    //utility
+    $('.close').on('click',function(e){
+        e.preventDefault();
+        $(this).parent().hide();
+    });
+    $('#share-now').on('click',function(e){
+        e.preventDefault();
+        var top = 50;
+        var left = ($(window).width() - $('#social-sharing').width())/2;
+        $('#social-sharing').css({top: top, left: left}).show();
+    });
+
+    // Fix the tabbing issue in Chrome
+    if (chrome) {
+        $('#module-1k input').on('focus focusin',function() {
+            setTimeout(function() { // setTimeout makes sure that this runs after 
+                                    // the original problem (it had a delay)
+               $('#module-1k').scrollTop(0);
+               window.scrollTo(0, $(document).height());
+            }, 0);
+        }); 
+    }
+
+})(jQuery);
+</script>

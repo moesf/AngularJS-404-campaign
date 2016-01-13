@@ -1,0 +1,1341 @@
+/*
+#q {
+
+
+}
+*/
+/* line 13, ../compass/sass/quiz.scss */
+.quiz .score {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  -webkit-transition-duration: 2s;
+  transition-duration: 2s;
+  position: fixed;
+  top: 50px;
+  left: 10px;
+  width: 324px;
+  min-height: 164px;
+  height: auto;
+  z-index: 200;
+}
+/* line 25, ../compass/sass/quiz.scss */
+.quiz .score.scrolled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+/* line 28, ../compass/sass/quiz.scss */
+.quiz .score .scoreboard {
+  width: 324px;
+  height: 164px;
+  border: 3px solid #ebdbd2;
+  padding: 20px 23px 0;
+  overflow: hidden;
+  background-color: #ac6666;
+  color: #fff;
+}
+/* line 37, ../compass/sass/quiz.scss */
+.quiz .score .scoreboard p {
+  margin-bottom: 20px;
+}
+/* line 42, ../compass/sass/quiz.scss */
+.quiz .score .scoreboard li {
+  background: url(assets/heart_container/heart_empty.png);
+  background-size: 36px 33px;
+  margin: 0px 11px 15px 0;
+  height: 33px;
+  width: 36px;
+  float: left;
+}
+/* line 49, ../compass/sass/quiz.scss */
+.quiz .score .scoreboard li:nth-of-type(6), .quiz .score .scoreboard li:nth-of-type(12) {
+  margin-right: 0;
+}
+/* line 52, ../compass/sass/quiz.scss */
+.quiz .score .scoreboard li.a1 {
+  background: url(assets/heart_container/heart_one.png);
+  background-size: 36px 33px;
+}
+/* line 56, ../compass/sass/quiz.scss */
+.quiz .score .scoreboard li.a2 {
+  background: url(assets/heart_container/heart_two.png);
+  background-size: 36px 33px;
+}
+/* line 60, ../compass/sass/quiz.scss */
+.quiz .score .scoreboard li.a3 {
+  background: url(assets/heart_container/heart_three.png);
+  background-size: 36px 33px;
+}
+/* line 64, ../compass/sass/quiz.scss */
+.quiz .score .scoreboard li.a4 {
+  background: url(assets/heart_container/heart_four.png);
+  background-size: 36px 33px;
+}
+/* line 68, ../compass/sass/quiz.scss */
+.quiz .score .scoreboard li.a5 {
+  background: url(assets/heart_container/heart_full.png);
+  background-size: 36px 33px;
+}
+/* line 75, ../compass/sass/quiz.scss */
+.quiz .score .score_words {
+  background-color: #ac6666;
+  color: #fff;
+  display: none;
+}
+/* line 79, ../compass/sass/quiz.scss */
+.quiz .score .score_words.shown {
+  display: block;
+}
+/* line 83, ../compass/sass/quiz.scss */
+.quiz .score .score_words div {
+  padding: 20px 23px 20px;
+  text-align: center;
+}
+/* line 88, ../compass/sass/quiz.scss */
+.quiz .score .score_words #box1 {
+  width: 324px;
+  height: auto;
+  border-left: 3px solid #ebdbd2;
+  border-right: 3px solid #ebdbd2;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 26px;
+}
+/* line 97, ../compass/sass/quiz.scss */
+.quiz .score .score_words #box1 p {
+  width: 250px;
+  margin: 0 auto;
+}
+/* line 120, ../compass/sass/quiz.scss */
+.quiz .score .score_words #box2 {
+  width: 324px;
+  height: 158px;
+  border: 3px solid #ebdbd2;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+/* line 127, ../compass/sass/quiz.scss */
+.quiz .score .score_words #box2 p {
+  width: 250px;
+  margin: 0 auto 20px;
+}
+/* line 132, ../compass/sass/quiz.scss */
+.quiz .score .score_words a.submit {
+  background: url(assets/submit-02-off.png);
+  display: inline-block;
+  width: 137px;
+  height: 56px;
+}
+/* line 138, ../compass/sass/quiz.scss */
+.quiz .score .score_words a.submit:hover {
+  background: url(assets/submit-02-on.png);
+}
+/* line 144, ../compass/sass/quiz.scss */
+.quiz .qa {
+  background: url(assets/QA_sprite.png);
+  background-position: 0 0;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 150;
+}
+/* line 153, ../compass/sass/quiz.scss */
+.quiz .qa:hover {
+  background-position: 0 -58px;
+}
+/* line 156, ../compass/sass/quiz.scss */
+.quiz .qa.correct {
+  background-position: 0 -116px;
+}
+/* line 159, ../compass/sass/quiz.scss */
+.quiz .qa.wrong {
+  background-position: 0 -174px;
+}
+/* line 162, ../compass/sass/quiz.scss */
+.quiz .qa.clicked {
+  overflow: visible;
+}
+/* line 164, ../compass/sass/quiz.scss */
+.quiz .qa.clicked ul {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 169, ../compass/sass/quiz.scss */
+.quiz ul.q {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  -webkit-transition-duration: 2s;
+  transition-duration: 2s;
+  background-color: #691520;
+  color: #fff;
+  font-size: 14px;
+  min-width: 200px;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  position: absolute;
+  top: 65px;
+}
+/* line 183, ../compass/sass/quiz.scss */
+.quiz ul.q li {
+  position: relative;
+  border-bottom: 1px solid #fff;
+  padding: 10px 20px 10px 27px;
+  white-space: nowrap;
+}
+/* line 188, ../compass/sass/quiz.scss */
+.quiz ul.q li:before {
+  content: '\25CB';
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
+  left: 8px;
+  position: absolute;
+  top: 5px;
+}
+/* line 198, ../compass/sass/quiz.scss */
+.quiz ul.q li:last-child {
+  border: none;
+}
+/* line 201, ../compass/sass/quiz.scss */
+.quiz ul.q li.chosen {
+  background-color: #b98e94;
+}
+/* line 205, ../compass/sass/quiz.scss */
+.quiz ul.q.hidden {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 209, ../compass/sass/quiz.scss */
+.quiz ul.q.shown {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 214, ../compass/sass/quiz.scss */
+.quiz #module-1a {
+  background: url(module-1a/module-1a-FULL.jpg);
+  height: 5800px;
+  /* Chrome, Safari, Opera */
+  /* Standard syntax */
+}
+/* line 218, ../compass/sass/quiz.scss */
+.quiz #module-1a #top-right {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 1px;
+  height: 5px;
+  visibility: hidden;
+}
+/* line 227, ../compass/sass/quiz.scss */
+.quiz #module-1a .again_wording {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  background-color: #000;
+  color: #fff;
+  display: none;
+  font-size: 20px;
+  line-height: 50px;
+  padding: 20px 25px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 300;
+  /*        &.again & {
+              display: block;
+          }*/
+}
+/* line 245, ../compass/sass/quiz.scss */
+.quiz #module-1a #nav-arrow {
+  background: url(assets/nav-arrow.png);
+  width: 140px;
+  height: 240px;
+  position: absolute;
+  top: 400px;
+  left: 10px;
+  -webkit-animation: arrowMove 1500ms ease-in 1s 10;
+  /* Chrome, Safari, Opera */
+  animation: arrowMove 1500ms ease-in 1s 10;
+}
+@-webkit-keyframes arrowMove {
+  0% {
+    top: 400px;
+  }
+  50% {
+    top: 440px;
+  }
+  100% {
+    top: 400px;
+  }
+}
+@keyframes arrowMove {
+  0% {
+    top: 400px;
+  }
+  50% {
+    top: 440px;
+  }
+  100% {
+    top: 400px;
+  }
+}
+/* line 269, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa1 {
+  top: 949px;
+  left: 943px;
+}
+/* line 272, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa1 ul {
+  right: 15px;
+}
+/* line 276, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa2 {
+  top: 1282px;
+  left: 524px;
+}
+/* line 279, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa2 ul {
+  right: -170px;
+}
+/* line 283, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa3 {
+  top: 1818px;
+  left: 889px;
+}
+/* line 286, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa3 ul {
+  right: 15px;
+}
+/* line 290, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa4 {
+  top: 2125px;
+  left: 589px;
+}
+/* line 293, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa4 ul {
+  right: 15px;
+}
+/* line 297, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa5 {
+  top: 2202px;
+  left: 802px;
+}
+/* line 300, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa5 ul {
+  right: 15px;
+}
+/* line 304, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa6 {
+  top: 2849px;
+  left: 531px;
+}
+/* line 307, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa6 ul {
+  right: 15px;
+}
+/* line 311, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa7 {
+  top: 3143px;
+  left: 852px;
+}
+/* line 314, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa7 ul {
+  right: 15px;
+}
+/* line 318, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa8 {
+  top: 3768px;
+  left: 367px;
+}
+/* line 321, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa8 ul {
+  left: 15px;
+}
+/* line 325, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa9 {
+  top: 4203px;
+  left: 695px;
+}
+/* line 328, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa9 ul {
+  right: 15px;
+}
+/* line 332, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa10 {
+  top: 4324px;
+  left: 849px;
+}
+/* line 335, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa10 ul {
+  right: 15px;
+}
+/* line 339, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa11 {
+  top: 4649px;
+  left: 555px;
+}
+/* line 342, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa11 ul {
+  right: 15px;
+}
+/* line 346, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa12 {
+  top: 4905px;
+  left: 1182px;
+}
+/* line 349, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa12 ul {
+  right: 15px;
+}
+/* line 353, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa13 {
+  top: 5473px;
+  left: 72px;
+}
+/* line 356, ../compass/sass/quiz.scss */
+.quiz #module-1a #qa13 ul {
+  left: 15px;
+}
+/* line 361, ../compass/sass/quiz.scss */
+.quiz #module-1b {
+  height: 1860px;
+}
+/* line 365, ../compass/sass/quiz.scss */
+.quiz #module-1b.loaded {
+  background: url(module-1b/module-1b-FULL.jpg);
+}
+/* line 368, ../compass/sass/quiz.scss */
+.quiz #module-1b #qa14 {
+  top: 12px;
+  left: 979px;
+}
+/* line 371, ../compass/sass/quiz.scss */
+.quiz #module-1b #qa14 ul {
+  right: 15px;
+}
+/* line 375, ../compass/sass/quiz.scss */
+.quiz #module-1b #qa15 {
+  top: 627px;
+  left: 549px;
+}
+/* line 378, ../compass/sass/quiz.scss */
+.quiz #module-1b #qa15 ul {
+  right: 15px;
+}
+/* line 382, ../compass/sass/quiz.scss */
+.quiz #module-1b #qa16 {
+  top: 634px;
+  left: 1025px;
+}
+/* line 385, ../compass/sass/quiz.scss */
+.quiz #module-1b #qa16 ul {
+  right: 15px;
+}
+/* line 389, ../compass/sass/quiz.scss */
+.quiz #module-1b #qa17 {
+  top: 1089px;
+  left: 549px;
+}
+/* line 392, ../compass/sass/quiz.scss */
+.quiz #module-1b #qa17 ul {
+  left: 15px;
+}
+/* line 396, ../compass/sass/quiz.scss */
+.quiz #module-1b #qa18 {
+  top: 1353px;
+  left: 544px;
+}
+/* line 399, ../compass/sass/quiz.scss */
+.quiz #module-1b #qa18 ul {
+  right: 15px;
+}
+/* line 403, ../compass/sass/quiz.scss */
+.quiz #module-1b #qa19 {
+  top: 1390px;
+  left: 850px;
+}
+/* line 406, ../compass/sass/quiz.scss */
+.quiz #module-1b #qa19 ul {
+  right: 15px;
+}
+/* line 412, ../compass/sass/quiz.scss */
+.quiz #module-1c {
+  height: 1140px;
+}
+/* line 416, ../compass/sass/quiz.scss */
+.quiz #module-1c.loaded {
+  background: url(module-1c/module-1c-FULL.jpg);
+}
+/* line 419, ../compass/sass/quiz.scss */
+.quiz #module-1c #qa20 {
+  top: 217px;
+  left: 34px;
+}
+/* line 422, ../compass/sass/quiz.scss */
+.quiz #module-1c #qa20 ul {
+  left: 15px;
+}
+/* line 426, ../compass/sass/quiz.scss */
+.quiz #module-1c #qa21 {
+  top: 44px;
+  left: 695px;
+}
+/* line 429, ../compass/sass/quiz.scss */
+.quiz #module-1c #qa21 ul {
+  right: 15px;
+}
+/* line 433, ../compass/sass/quiz.scss */
+.quiz #module-1c #qa22 {
+  top: 304px;
+  left: 1210px;
+}
+/* line 436, ../compass/sass/quiz.scss */
+.quiz #module-1c #qa22 ul {
+  right: 15px;
+}
+/* line 440, ../compass/sass/quiz.scss */
+.quiz #module-1c #qa23 {
+  top: 739px;
+  left: 75px;
+}
+/* line 443, ../compass/sass/quiz.scss */
+.quiz #module-1c #qa23 ul {
+  left: 15px;
+}
+/* line 447, ../compass/sass/quiz.scss */
+.quiz #module-1c #qa24 {
+  top: 768px;
+  left: 1197px;
+}
+/* line 450, ../compass/sass/quiz.scss */
+.quiz #module-1c #qa24 ul {
+  right: 15px;
+}
+/* line 454, ../compass/sass/quiz.scss */
+.quiz #module-1c #qa25 {
+  top: 919px;
+  left: 818px;
+}
+/* line 457, ../compass/sass/quiz.scss */
+.quiz #module-1c #qa25 ul {
+  right: 15px;
+}
+/* line 462, ../compass/sass/quiz.scss */
+.quiz #module-1d {
+  height: 1025px;
+}
+/* line 464, ../compass/sass/quiz.scss */
+.quiz #module-1d.loaded {
+  background: url(module-1d/module-1d-FULL.jpg);
+}
+/* line 467, ../compass/sass/quiz.scss */
+.quiz #module-1d #qa26 {
+  top: 90px;
+  left: 126px;
+}
+/* line 470, ../compass/sass/quiz.scss */
+.quiz #module-1d #qa26 ul {
+  left: 15px;
+}
+/* line 474, ../compass/sass/quiz.scss */
+.quiz #module-1d #qa27 {
+  top: 16px;
+  left: 915px;
+}
+/* line 477, ../compass/sass/quiz.scss */
+.quiz #module-1d #qa27 ul {
+  right: 15px;
+}
+/* line 481, ../compass/sass/quiz.scss */
+.quiz #module-1d #qa28 {
+  top: 702px;
+  left: 362px;
+}
+/* line 484, ../compass/sass/quiz.scss */
+.quiz #module-1d #qa28 ul {
+  right: 15px;
+}
+/* line 488, ../compass/sass/quiz.scss */
+.quiz #module-1d #qa29 {
+  top: 738px;
+  left: 1161px;
+}
+/* line 491, ../compass/sass/quiz.scss */
+.quiz #module-1d #qa29 ul {
+  right: 75px;
+  top: -65px;
+}
+/* line 496, ../compass/sass/quiz.scss */
+.quiz #module-1e {
+  height: 2000px;
+}
+/* line 500, ../compass/sass/quiz.scss */
+.quiz #module-1e.loaded {
+  background: url(module-1e/module-1e-FULL.jpg);
+}
+/* line 503, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa30 {
+  top: 180px;
+  left: 904px;
+}
+/* line 506, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa30 ul {
+  right: 15px;
+}
+/* line 510, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa31 {
+  top: 138px;
+  left: 283px;
+}
+/* line 513, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa31 ul {
+  left: 15px;
+}
+/* line 517, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa32 {
+  top: 723px;
+  left: 301px;
+}
+/* line 520, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa32 ul {
+  left: 75px;
+  top: 0;
+}
+/* line 525, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa33 {
+  top: 920px;
+  left: 352px;
+}
+/* line 528, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa33 ul {
+  left: 15px;
+}
+/* line 532, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa34 {
+  top: 1050px;
+  left: 1109px;
+}
+/* line 535, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa34 ul {
+  right: 15px;
+}
+/* line 539, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa35 {
+  top: 1440px;
+  left: 56px;
+}
+/* line 542, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa35 ul {
+  left: 15px;
+}
+/* line 546, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa36 {
+  top: 1312px;
+  left: 323px;
+}
+/* line 549, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa36 ul {
+  right: 15px;
+}
+/* line 553, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa37 {
+  top: 1478px;
+  left: 719px;
+}
+/* line 556, ../compass/sass/quiz.scss */
+.quiz #module-1e #qa37 ul {
+  right: 15px;
+}
+/* line 561, ../compass/sass/quiz.scss */
+.quiz #module-1f {
+  height: 800px;
+}
+/* line 565, ../compass/sass/quiz.scss */
+.quiz #module-1f.loaded {
+  background: url(module-1f/module-1f-FULL.jpg);
+}
+/* line 568, ../compass/sass/quiz.scss */
+.quiz #module-1f #qa38 {
+  top: 91px;
+  left: 420px;
+}
+/* line 571, ../compass/sass/quiz.scss */
+.quiz #module-1f #qa38 ul {
+  right: 15px;
+}
+/* line 575, ../compass/sass/quiz.scss */
+.quiz #module-1f #qa39 {
+  top: 406px;
+  left: 976px;
+}
+/* line 578, ../compass/sass/quiz.scss */
+.quiz #module-1f #qa39 ul {
+  right: 15px;
+}
+/* line 582, ../compass/sass/quiz.scss */
+.quiz #module-1f #qa40 {
+  top: 671px;
+  left: 74px;
+}
+/* line 585, ../compass/sass/quiz.scss */
+.quiz #module-1f #qa40 ul {
+  left: 15px;
+  z-index: 5;
+}
+/* line 590, ../compass/sass/quiz.scss */
+.quiz #module-1f #qa41 {
+  top: 477px;
+  left: 322px;
+}
+/* line 593, ../compass/sass/quiz.scss */
+.quiz #module-1f #qa41 ul {
+  right: 15px;
+}
+/* line 597, ../compass/sass/quiz.scss */
+.quiz #module-1f #qa42 {
+  top: 619px;
+  left: 999px;
+}
+/* line 600, ../compass/sass/quiz.scss */
+.quiz #module-1f #qa42 ul {
+  right: 15px;
+}
+/* line 605, ../compass/sass/quiz.scss */
+.quiz #module-1g {
+  height: 500px;
+}
+/* line 609, ../compass/sass/quiz.scss */
+.quiz #module-1g.loaded {
+  background: url(module-1g/module-1g-FULL.jpg);
+}
+/* line 612, ../compass/sass/quiz.scss */
+.quiz #module-1g #qa43 {
+  top: 283px;
+  left: 281px;
+}
+/* line 615, ../compass/sass/quiz.scss */
+.quiz #module-1g #qa43 ul {
+  right: 15px;
+}
+/* line 619, ../compass/sass/quiz.scss */
+.quiz #module-1g #qa44 {
+  top: 183px;
+  left: 1164px;
+}
+/* line 622, ../compass/sass/quiz.scss */
+.quiz #module-1g #qa44 ul {
+  right: 15px;
+}
+/* line 627, ../compass/sass/quiz.scss */
+.quiz #module-1h {
+  height: 700px;
+}
+/* line 631, ../compass/sass/quiz.scss */
+.quiz #module-1h.loaded {
+  background: url(module-1h/module-1h-FULL.jpg);
+}
+/* line 634, ../compass/sass/quiz.scss */
+.quiz #module-1h #qa45 {
+  top: 312px;
+  left: 250px;
+}
+/* line 637, ../compass/sass/quiz.scss */
+.quiz #module-1h #qa45 ul {
+  right: 15px;
+}
+/* line 641, ../compass/sass/quiz.scss */
+.quiz #module-1h #qa46 {
+  top: 145px;
+  left: 337px;
+}
+/* line 644, ../compass/sass/quiz.scss */
+.quiz #module-1h #qa46 ul {
+  right: 15px;
+}
+/* line 648, ../compass/sass/quiz.scss */
+.quiz #module-1h #qa47 {
+  top: 58px;
+  left: 844px;
+}
+/* line 651, ../compass/sass/quiz.scss */
+.quiz #module-1h #qa47 ul {
+  right: 15px;
+}
+/* line 655, ../compass/sass/quiz.scss */
+.quiz #module-1h #qa48 {
+  top: 445px;
+  left: 571px;
+}
+/* line 658, ../compass/sass/quiz.scss */
+.quiz #module-1h #qa48 ul {
+  right: 15px;
+}
+/* line 662, ../compass/sass/quiz.scss */
+.quiz #module-1h #qa49 {
+  top: 432px;
+  left: 1125px;
+}
+/* line 665, ../compass/sass/quiz.scss */
+.quiz #module-1h #qa49 ul {
+  right: 15px;
+}
+/* line 670, ../compass/sass/quiz.scss */
+.quiz #module-1i {
+  height: 2109px;
+}
+/* line 674, ../compass/sass/quiz.scss */
+.quiz #module-1i.loaded {
+  background: url(module-1i/module-1i-FULL.jpg);
+}
+/* line 677, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa50 {
+  top: 53px;
+  left: 500px;
+}
+/* line 680, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa50 ul {
+  right: 15px;
+}
+/* line 684, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa51 {
+  top: 296px;
+  left: 234px;
+}
+/* line 687, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa51 ul {
+  right: 15px;
+}
+/* line 691, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa52 {
+  top: 662px;
+  left: 785px;
+}
+/* line 694, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa52 ul {
+  right: 15px;
+}
+/* line 698, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa53 {
+  top: 340px;
+  left: 983px;
+}
+/* line 701, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa53 ul {
+  right: 15px;
+}
+/* line 705, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa54 {
+  top: 311px;
+  left: 721px;
+}
+/* line 708, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa54 ul {
+  right: 15px;
+}
+/* line 712, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa55 {
+  top: 1216px;
+  left: 33px;
+}
+/* line 715, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa55 ul {
+  left: 15px;
+}
+/* line 719, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa56 {
+  top: 1513px;
+  left: 30px;
+}
+/* line 722, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa56 ul {
+  left: 15px;
+}
+/* line 726, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa57 {
+  top: 1335px;
+  left: 1211px;
+}
+/* line 729, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa57 ul {
+  right: 15px;
+}
+/* line 733, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa58 {
+  top: 1858px;
+  left: 105px;
+}
+/* line 736, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa58 ul {
+  left: 15px;
+}
+/* line 740, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa59 {
+  top: 1850px;
+  left: 796px;
+}
+/* line 743, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa59 ul {
+  right: 15px;
+}
+/* line 747, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa60 {
+  top: 1836px;
+  left: 1074px;
+}
+/* line 750, ../compass/sass/quiz.scss */
+.quiz #module-1i #qa60 ul {
+  right: 15px;
+}
+/* line 755, ../compass/sass/quiz.scss */
+.quiz #module-1k {
+  height: 1011px;
+  width: 1280px;
+  color: #fff;
+}
+/* line 760, ../compass/sass/quiz.scss */
+.quiz #module-1k.loaded {
+  background: url(module-1k/module-1k.jpg);
+}
+/* line 763, ../compass/sass/quiz.scss */
+.quiz #module-1k header {
+  height: 331px;
+  text-align: center;
+}
+/* line 766, ../compass/sass/quiz.scss */
+.quiz #module-1k header h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+/* line 770, ../compass/sass/quiz.scss */
+.quiz #module-1k header h3 {
+  font-size: 34px;
+  height: 44px;
+}
+/* line 774, ../compass/sass/quiz.scss */
+.quiz #module-1k header p {
+  font-size: 18px;
+  line-height: 28px;
+}
+/* line 782, ../compass/sass/quiz.scss */
+.quiz #module-1k header.before-submit {
+  display: block;
+}
+/* line 786, ../compass/sass/quiz.scss */
+.quiz #module-1k header.before-submit h2 {
+  padding-top: 88px;
+  height: 126px;
+}
+/* line 793, ../compass/sass/quiz.scss */
+.quiz #module-1k header.after-submit {
+  display: none;
+}
+/* line 796, ../compass/sass/quiz.scss */
+.quiz #module-1k header.after-submit h2 {
+  padding-top: 38px;
+  height: 89px;
+}
+/* line 800, ../compass/sass/quiz.scss */
+.quiz #module-1k header.after-submit .level {
+  height: 46px;
+}
+/* line 803, ../compass/sass/quiz.scss */
+.quiz #module-1k header.after-submit .level-desc {
+  height: 60px;
+}
+/* line 819, ../compass/sass/quiz.scss */
+.quiz #module-1k #share-now {
+  background: url(module-1k/share-now-off.png);
+  display: inline-block;
+  width: 190px;
+  height: 56px;
+  position: absolute;
+  top: 242px;
+  left: 418px;
+}
+/* line 827, ../compass/sass/quiz.scss */
+.quiz #module-1k #share-now:hover {
+  background: url(module-1k/share-now-on.png);
+}
+/* line 832, ../compass/sass/quiz.scss */
+.quiz #module-1k #play-again {
+  background: url(module-1k/play-again-off.png);
+  display: inline-block;
+  width: 190px;
+  height: 56px;
+  position: absolute;
+  top: 242px;
+  left: 676px;
+}
+/* line 840, ../compass/sass/quiz.scss */
+.quiz #module-1k #play-again:hover {
+  background: url(module-1k/play-again-on.png);
+}
+/* line 844, ../compass/sass/quiz.scss */
+.quiz #module-1k #social-sharing {
+  background-color: #000;
+  display: none;
+  position: fixed;
+  width: auto;
+  height: auto;
+  z-index: 300;
+}
+/* line 851, ../compass/sass/quiz.scss */
+.quiz #module-1k #social-sharing a.close {
+  background: url(module-1k/close.png) no-repeat;
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
+/* line 861, ../compass/sass/quiz.scss */
+.quiz #module-1k #social-sharing .content {
+  background: #600f1a url(module-1k/BFL-404-SS-07a.jpg) no-repeat;
+  width: 400px;
+  height: 400px;
+  margin: 60px 70px 0px;
+  padding: 300px 0 0 0;
+}
+/* line 867, ../compass/sass/quiz.scss */
+.quiz #module-1k #social-sharing .content h2 {
+  padding-top: 15px;
+  height: 32px;
+  font-size: 20px;
+}
+/* line 872, ../compass/sass/quiz.scss */
+.quiz #module-1k #social-sharing .content h3 {
+  font-size: 16px;
+  height: 20px;
+  margin-top: 44px;
+}
+/* line 877, ../compass/sass/quiz.scss */
+.quiz #module-1k #social-sharing .content p {
+  font-size: 16px;
+  line-height: 28px;
+}
+/* line 882, ../compass/sass/quiz.scss */
+.quiz #module-1k #social-sharing ul {
+  margin: 20px 0 20px;
+}
+/* line 884, ../compass/sass/quiz.scss */
+html.safari .quiz #module-1k #social-sharing ul {
+  margin: 20px 0 30px;
+}
+/* line 887, ../compass/sass/quiz.scss */
+.quiz #module-1k #social-sharing ul li {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 892, ../compass/sass/quiz.scss */
+.quiz #module-1k #social-sharing ul li:last-child {
+  margin-right: 0;
+}
+/* line 895, ../compass/sass/quiz.scss */
+.quiz #module-1k #social-sharing ul li a {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+/* line 900, ../compass/sass/quiz.scss */
+.quiz #module-1k #social-sharing ul li a#share-twitter {
+  background-image: url(module-1k/Twitter.png);
+}
+/* line 903, ../compass/sass/quiz.scss */
+.quiz #module-1k #social-sharing ul li a#share-facebook {
+  background-image: url(module-1k/Facebook.png);
+}
+/* line 906, ../compass/sass/quiz.scss */
+.quiz #module-1k #social-sharing ul li a#share-google_plus {
+  background-image: url(module-1k/Google.png);
+}
+/* line 915, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1, .quiz #module-1k .col2, .quiz #module-1k .col3 {
+  float: left;
+}
+/* line 919, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 {
+  width: 427px;
+  height: 561px;
+  padding: 35px 0 0 82px;
+  position: relative;
+}
+/* line 920, ../compass/sass/quiz.scss */
+html.chrome .quiz #module-1k .col1 {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+}
+/* line 929, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 #form_curtain {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  background: #000;
+  color: #fff;
+  display: none;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  width: 363px;
+  height: 501px;
+  margin: 30px 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 15;
+  /*                .after-submit & {
+                      display: block;
+                  }
+                  .error & {
+                      display: block;
+                  }*/
+}
+/* line 945, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 #form_curtain a.close {
+  background: url(module-1k/close.png);
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 26px;
+  right: 29px;
+}
+/* line 954, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 #form_curtain p {
+  display: none;
+  font-size: 23px;
+  line-height: 42px;
+  /*                    .after-submit & {
+                          padding: 140px 0 0 0;
+                          display: block;
+                          
+                      }                    
+                      .error & {
+                          padding: 200px 0 0 0;
+                          display: block;
+                      }  */
+}
+/* line 967, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 #form_curtain p.after-submit {
+  padding: 140px 0 0 0;
+}
+/* line 970, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 #form_curtain p.error {
+  padding: 162px 0 0 0;
+}
+/* line 973, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 #form_curtain p.warning {
+  padding: 177px 0 0 0;
+  text-transform: uppercase;
+}
+/* line 978, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 #form_curtain.after-submit {
+  display: block;
+}
+/* line 980, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 #form_curtain.after-submit a {
+  display: none;
+}
+/* line 983, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 #form_curtain.after-submit p.after-submit {
+  display: block;
+}
+/* line 987, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 #form_curtain.error {
+  display: block;
+}
+/* line 989, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 #form_curtain.error p.error {
+  display: block;
+}
+/* line 993, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 #form_curtain.warning {
+  display: block;
+}
+/* line 995, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 #form_curtain.warning p.warning {
+  display: block;
+}
+/* line 1014, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 form label {
+  position: absolute;
+  left: -99999px;
+}
+/* line 1018, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 form input[type="text"], .quiz #module-1k .col1 form input[type="email"] {
+  background-color: #691520;
+  box-sizing: border-box;
+  border: 3px solid #efe8de;
+  width: 254px;
+  font-size: 14px;
+  color: #fff;
+  padding: 15px 13px;
+  margin-bottom: 11px;
+}
+/* line 61, ../../../../../../../../Users/kangminchang/.rvm/gems/ruby-2.2.0@global/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.quiz #module-1k .col1 form input[type="text"]:-moz-placeholder, .quiz #module-1k .col1 form input[type="email"]:-moz-placeholder {
+  color: #fff;
+  font-style: italic;
+}
+/* line 64, ../../../../../../../../Users/kangminchang/.rvm/gems/ruby-2.2.0@global/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.quiz #module-1k .col1 form input[type="text"]::-moz-placeholder, .quiz #module-1k .col1 form input[type="email"]::-moz-placeholder {
+  color: #fff;
+  font-style: italic;
+}
+/* line 67, ../../../../../../../../Users/kangminchang/.rvm/gems/ruby-2.2.0@global/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.quiz #module-1k .col1 form input[type="text"]:-ms-input-placeholder, .quiz #module-1k .col1 form input[type="email"]:-ms-input-placeholder {
+  color: #fff;
+  font-style: italic;
+}
+/* line 56, ../../../../../../../../Users/kangminchang/.rvm/gems/ruby-2.2.0@global/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.quiz #module-1k .col1 form input[type="text"]::-webkit-input-placeholder, .quiz #module-1k .col1 form input[type="email"]::-webkit-input-placeholder {
+  color: #fff;
+  font-style: italic;
+}
+/* line 1032, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 form input[type="text"][name='first_name'], .quiz #module-1k .col1 form input[type="email"][name='first_name'] {
+  width: 118px;
+  margin-right: 14px;
+}
+/* line 1036, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 form input[type="text"][name='last_name'], .quiz #module-1k .col1 form input[type="email"][name='last_name'] {
+  width: 118px;
+  margin-right: 0;
+}
+/* line 1042, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 form button {
+  display: inline-block;
+  background: url(module-1k/submit-01-off.png);
+  border: none;
+  height: 56px;
+  width: 254px;
+}
+/* line 1048, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 form button:hover {
+  background: url(module-1k/submit-01-on.png);
+}
+/* line 1052, ../compass/sass/quiz.scss */
+.quiz #module-1k .col1 form input.ng-invalid.ng-dirty {
+  border-color: #dfd372;
+}
+/* line 1063, ../compass/sass/quiz.scss */
+.quiz #module-1k .col2 {
+  background: url(module-1k/question-marks.png) no-repeat;
+  background-position: 71px 52px;
+  width: 427px;
+  height: 561px;
+}
+/* line 1064, ../compass/sass/quiz.scss */
+html.chrome .quiz #module-1k .col2 {
+  margin-left: 427px;
+}
+/* line 1072, ../compass/sass/quiz.scss */
+.quiz #module-1k .col2.after-submit {
+  background: url(module-1k/mastery-level.png) no-repeat;
+  background-position: 71px 52px;
+}
+/* line 1078, ../compass/sass/quiz.scss */
+.quiz #module-1k .col3 {
+  width: 426px;
+  height: 561px;
+}
+/* line 1082, ../compass/sass/quiz.scss */
+.quiz #module-1k .col3 #enter-site {
+  cursor: pointer;
+  display: inline-block;
+  background: url(module-1k/enter-site-off.png);
+  width: 254px;
+  height: 56px;
+  z-index: 220;
+  position: absolute;
+  top: 383px;
+  left: 941px;
+}
+/* line 1092, ../compass/sass/quiz.scss */
+.quiz #module-1k .col3 #enter-site:hover {
+  background: url(module-1k/enter-site-on.png);
+}
+/* line 1096, ../compass/sass/quiz.scss */
+.quiz #module-1k .col3 #logo {
+  background: url(assets/bonfire_labs_logo.png);
+  background-size: 83px 83px;
+  display: inline-block;
+  width: 83px;
+  height: 83px;
+  position: absolute;
+  top: 570px;
+  left: 1021px;
+}
+
+/*iframe {
+    width: 266px;
+    height: 386px;
+    border: 0;  
+}*/
+/*form {
+    width: 255px;
+    height: 376px;
+    label {
+        position: absolute;
+        left: -99999px;
+    }
+    input[type="text"], input[type="email"] {
+        @include input-placeholder {
+            color: #fff;
+            font-style: italic;
+        }
+        background-color: #691520;
+        box-sizing: border-box;
+        border:3px solid #efe8de;
+        width: 254px;
+        font-size: 14px;
+        color: #fff;
+        padding: 15px 13px;
+        margin-bottom: 11px;
+        &[name='first_name'] {
+            width:118px;
+            margin-right: 14px
+        }
+        &[name='last_name'] {
+            width: 118px;
+            margin-right: 0
+        }
+
+    }
+    button {//input[type=submit], button
+        display: inline-block;
+        background: url(module-1k/submit-01-off.png);
+        border: none;
+        height: 56px;
+        width: 254px;                    
+        &:hover {
+            background: url(module-1k/submit-01-on.png);
+        }
+    }
+    input.ng-invalid.ng-dirty {
+        border-color: #9a817c;
+    }
+    input.ng-valid.ng-dirty { 
+        //border-color: #9a817c; 
+    }
+}*/

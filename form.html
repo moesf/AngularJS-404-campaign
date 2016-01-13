@@ -1,0 +1,86 @@
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>            
+
+            <link rel="stylesheet" href="assets/css/quiz.css">
+            <!-- <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"> -->
+            <form id="infoForm" name="form" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" novalidate>
+
+                <input type=hidden name="oid" value="00Di0000000JORN">
+                <input type=hidden id="lead_source" name="lead_source" value="404 Page">
+                <input type=hidden class='404_Answer_Total' id="00Ni000000FirY0" name="00Ni000000FirY0" size="20" value='' />
+
+                <input type=hidden name="retURL" value="http://bonfirelabs.com/assets/404/thanks.html">
+                <input type=hidden name="00Ni000000FirY0" id="00Ni000000FirY0" size="20">
+
+                <input type="hidden" name="debug" value=1>
+                <input type="hidden" name="debugEmail" value="jens@bonfirelabs.com">
+
+                <label for="first_name">First Name</label>
+                <input placeholder='First Name' id="first_name" maxlength="40" name="first_name" size="20" type="text" ng-model="user.first_name" ng-pattern="/^(\D)+$/" required tabindex="0" />
+                <label for="last_name">Last Name</label>
+                <input placeholder='Last Name'  id="last_name" maxlength="80" name="last_name" size="20" type="text" ng-model="user.last_name" ng-pattern="/^(\D)+$/" required tabindex="0" />
+
+                <label for="company">Company</label><input placeholder='Company' id="company" maxlength="40" name="company" size="20" type="text" ng-model="user.company" required tabindex="0" />
+
+                <label for="email">Email</label><input placeholder='Email' id="email" maxlength="80" name="email" size="20" type="email" ng-model="user.email" required tabindex="0" />
+                <label for="confirmEmail">Email</label><input placeholder='Email' id="confirmEmail" maxlength="80" name="confirmEmail" size="20" type="email" ng-model="user.confirmEmail" required tabindex="0" />
+                <label for="phone">Phone</label>
+                <input placeholder='Phone xxx.xxx.xxxx' id="phone" maxlength="40" name="phone" size="20" type="text" ng-model="user.phone" ng-pattern="/^[(]{0,1}[0-9]{3}[)\.\- ]{0,1}[0-9]{3}[\.\- ]{0,1}[0-9]{4}$/" ng-minlength=10 required tabindex="0" />
+
+                <button></button>
+               
+
+            </form>
+             <!-- <input type="submit" name="submit" value='' /> -->
+
+
+             <div class='result' style='border: 2px solid red; width: 500px; height: 600px;'></div>
+
+
+<script>
+// $.ajax({
+//   type: "POST",
+//   url: url,
+//   data: data,
+//   success: success,
+//   dataType: dataType
+// });
+
+// $.post( "ajax/test.html", function( data ) {
+//   $( ".result" ).html( data );
+// });
+
+// $('form').submit(function() {
+//     var postTo = 'https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8';
+     //{first_name: $('[name=first_name]').val(), last_name: $('[name=last_name]').val(), email: $('[name=email]').val()}
+//     $.post(postTo,({first_name: $('[name=first_name]').val(), last_name: $('[name=last_name]').val(), email: $('[name=email]').val()}),
+//     function(data) {
+//         //alert(data);
+//         if(data != "") {
+//         // do something
+//         $( ".result" ).html( data );
+//         } else {
+//         // couldn't connect
+//         }
+//     },'html');
+//     return false;     
+// }); 
+
+$('#infoForm').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: 'POST',
+        url: 'https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8',
+        crossDomain: true,
+        data: {first_name: $('[name=first_name]').val(), last_name: $('[name=last_name]').val(), email: $('[name=email]').val()},
+        dataType: 'html',
+        success: function(responseData, textStatus, jqXHR) {
+            console.log('done')
+        },
+        error: function (responseData, textStatus, errorThrown) {
+            console.log('POST failed.');
+        }
+    });
+
+ 
+});
+</script>             

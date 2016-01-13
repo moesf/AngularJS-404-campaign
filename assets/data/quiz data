@@ -1,0 +1,154 @@
+
+friends = [
+  {name:'John', age:25, gender:'boy'},
+  {name:'Jessie', age:30, gender:'girl'},
+  {name:'Johanna', age:28, gender:'girl'},
+  {name:'Joy', age:15, gender:'girl'},
+  {name:'Mary', age:28, gender:'girl'},
+  {name:'Peter', age:95, gender:'boy'},
+  {name:'Sebastian', age:50, gender:'boy'},
+  {name:'Erika', age:27, gender:'girl'},
+  {name:'Patrick', age:40, gender:'boy'},
+  {name:'Samantha', age:60, gender:'girl'}
+]
+
+
+  {
+    "id": 0,
+    "options": ["","",""],
+    "correctIndex": 0
+  }
+
+Space:
+['Stephen Hawking','Professor X','Doctor Strangelove'],
+
+['2001 Space Odyssey','Mars Attacks!','Brother From Another Planet'],
+
+['Doctor Who's Tardis','Bill And Ted's Phonebooth','The Ark Of The Covenant'],
+
+['Trimaxium Drone Ship','Romulan Bird Of Prey','Milano Starship'],
+
+['Laika The Space Dog','Astro (The Jetsons)','Scooby Doo'],
+
+['The Great Space','Coaster  Grease Lightning','Luke's Sand Speeder'],
+
+['Carl Sagan','Grease Lightning','John Denver'],
+
+Mountains:
+
+['The Death Star','Cybertron','Third Earth'],
+
+['Peter Pan And The Lost Boys','Mighty Morphin Power Rangers','The Blue Angels'],
+
+['Neko Bus','The Magic School Bus','The Soul Train'],
+
+['Godzilla','Bowser','Grimlock'],
+
+['Rivendell','Narnia','Philadelphia'],
+
+['The Beetlejuice House','The Sarlacc Pit','The Bates Motel'],
+
+['Falcor','Haku','Chewbacca],
+'
+City:
+
+['Twin Peaks','The Godfather','Ordinary People'],
+
+['Totoro','Paddington Bear','X The Owl'],
+
+['Ghostbusters','The Frighteners','Ice Pirates'],
+
+['Brazil','Star Search','Werewolves Of London'],
+
+['The Shining','Q-Bert','The Joy Of Hex'],
+
+['Safety Last!','Back To The Future','Vertigo'],
+
+['Harry Caul','Bleeding Gums Murphy','Ron Swanson'],
+
+['Rear Window','Kill Bill','Save The Last Dance'],
+
+['Scenes Of The Crime','Cheers','Casablancas'],
+
+['The Royal Tenenbaums','The Triplets Of Belleville','3 Ninjas'],
+
+['Naked Lunch','They Live','Alien'],
+
+Below:
+
+['Teenage Mutant Ninja Turtles','Gamera','Koopa Troopa'],
+
+['Escape From New York','Big Trouble Little China','Metal Gear Solid'],
+
+Club:
+
+['The Goonies','Game Of Thrones','He-Man And The Masters Of The Universe'],
+
+['Coraline','Alice's Adventures In Wonderland','Amelie'],
+
+['New Romantics','Flock Of Seagulls','The Thompson Twins'],
+
+['Klaus Nomi And Dancers','Space Oddity','Nosferatu'],
+
+['Thumbelina','Buffy Summers','Dolly Parton'],
+
+['Jim Jarmusch','Malfoy','Quicksilver'],
+
+Underground:
+
+['Ingrid Pitt','Elvira','Vampira'],
+
+['Salem’S Lot','Interview With A Vampire','Fright Night'],
+
+['Vampires Kiss','Dark Shadows','Once Bitten'],
+
+['The Hunger','Corpse Bride','The Brides Of Dracula'],
+
+['The Mole People','The Descent','Larry King'],
+
+['Jurassic Park','The Rock','Mosquito Man'],
+
+['Re-Animator','Planet Terror','Jacob's Ladder'],
+
+['Young Frankenstein','Oompa Loompa','Abe Vigoda'],
+
+['Amadeus','Steve Guttenberg','John Williams'],
+
+['Night Of The Comet','Wonder Woman','Friday Night Lights'],
+
+['Evil Dead II','Texas Chainsaw Masacre','Shawn Of The Dead'],
+
+['Astro Boy','Mega Man','Jetter Mars'],
+
+['K-9','Robodog','Robopet'],
+
+['Bender','Cylon','C3Po'],
+
+['Short Circuit II','Ed 209','R2D2'],
+
+['Vicky The Robot','Rosie The Robot','Robby The Robot'],
+
+Science Lab:
+
+['Hyena Swine','Pigmalion','Schweinhundt'],
+
+['Dr. Ian Malcolm','Seth Brundle','David Levinson'],
+
+['Loch Ness','Apatosaurus','Elasmosaurus'],
+
+['Sharkmaid','Naiad','Siren'],
+
+['The Belafonte','The Nautilus','Seaquest Dsv 4600'],
+
+['Creature From The Black Lagoon','Aquaman','Predator'],
+
+['20K Leagues Under The Sea','League Of Extraordinary Gentlemen','The Abyss'],
+
+['The Little Mermaid','A.I.','Promethius'],
+
+['Vincent Vega','Glenn Danzig','Cher'],
+
+['Firefly','Troop Beverly Hills','Up'],
+
+['Dale Cooper','Tommy Lee Jones','Neo'],
+

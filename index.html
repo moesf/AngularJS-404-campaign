@@ -1,0 +1,113 @@
+﻿
+<!DOCTYPE html>
+<html ng-app="bflApp">
+    <head>
+        <title>404 Pop Quiz Fun</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="title" content="Bonfire Labs 404 contest" />
+        <meta itemprop="name" content="Bonfire Labs 404 contest" />
+
+        <meta name="keywords" content="creative content agency, motion graphics, visual effects, vfx, creative content, design, motion design, motion prototyping, testimonial, documentary, creative editorial, visual communications, advertising agency, creative studio, user experience design, goodby silverstein, gsp, venables bell, publicis, organic online, avocados and coconuts, swordfish, swordfish-sf, sword fish, brand new school, bns, mekanism, sarofsky, the science project, tspxyz, digital kitchen, thisisdk, motion graphics, animation, interactive creative services, adobe CS5, cinema 4D, HDR light studio, Houdini, iAd producer, mocha imagineer, autodesk maya 3D, nuke, autodesk smoke, apple final cut, adobe after effects, phil spitler, jonathan keeton, john stewart, jim bartel, carey crosby, bob frisk, web development, web commercial, broadcast commercial, elearning, event marketing, ideation" />
+
+        <meta name="description" content="I am no fool. Come play and see if you can score higher."/>
+
+        <meta property="og:type" content="website"/>
+        <meta property="og:site_name" content="http://bonfirelabs.com/"/>                
+        <meta property="og:url" content="http://bonfirelabs.com/assets/404/"/>
+        <meta property="og:title" content="Pop Culture Quiz"/>
+        <meta property="og:description" content="How deep is your pop culture knowledge? You could win some amazing prizes from Bonfire Labs. #ImNoFool #Bonfirelabs"/>
+        <meta property="og:image" content="http://bonfirelabs.com/assets/404/assets/images/BFL-404-SS-07a.jpg" />
+
+        <meta itemprop="title" content="Pop Culture Quiz"/>
+        <meta itemprop="description" content="How deep is your pop culture knowledge? You could win some amazing prizes from Bonfire Labs. #ImNoFool #Bonfirelabs"/>
+        
+        <meta name="twitter:description" value="I am no fool. Come play and see if you can score higher."/>
+        <meta name="twitter:card" value="summary" />
+        <meta name="twitter:title" content="Share the 404 Fun on 4.01"/>
+        <meta name="twitter:site" value="@bonfirelabs" />
+        <meta name="twitter:creator" value="@bonfirelabs" />
+        <meta name="twitter:domain" content="bonfirelabs.com">
+
+        <link rel="stylesheet" href="assets/css/animation.css">
+        <link rel="stylesheet" href="assets/css/animation-conner.css">
+        <link rel="stylesheet" href="assets/css/quiz.css">
+        <link rel="stylesheet" href="assets/css/quiz2.css">
+
+        <!-- Google Analytics -->
+        <script>
+        var _gaq=[['_setAccount','UA-39700255-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+        <!-- Start of StatCounter Code for Default Guide -->
+        <script type="text/javascript">
+        var sc_project=8881771;
+        var sc_invisible=1;
+        var sc_security="ff1e5eee";
+        var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+        document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+        "statcounter.com/counter/counter.js'></"+"script>");
+        </script>
+        <noscript><div class="statcounter"><a title="web analytics"
+        href="http://statcounter.com/" target="_blank"><img class="statcounter"
+        src="http://c.statcounter.com/8881771/0/ff1e5eee/1/" alt="web
+        analytics"></a></div></noscript>
+        <!-- End of StatCounter Code for Default Guide -->
+
+    </head>
+    
+    <body ng-controller="mainController">
+
+        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        <div id="main">
+          <div id='how-far'>distance from the top: 0</div>
+          <!-- angular templating -->
+          <!-- this is where content will be injected -->
+          <div class="page {{ pageClass }}" ng-view></div>
+            <footer>
+                <ul>
+                    <li><a id='twitter' href='https://twitter.com/bonfirelabs' target='_blank' title='twitter'></a></li>
+                    <li><a id='facebook' href='https://www.facebook.com/bonfirelabs' target='_blank' title='facebook'></a></li>
+                    <li><a id='linkedin' href=' https://www.linkedin.com/company/bonfirelabs' target='_blank' title='linkedin'></a></li>
+                    <li><a id='youtube' href='https://www.youtube.com/user/BonfireLabs' target='_blank' title='youtube'></a></li>
+                    <li><a id='google_plus' href='https://plus.google.com/+bonfirelabs/about' target='_blank' title='google plus'></a></li>
+                </ul>
+                <p>BONFIRE LABS COPYRIGHT 2015 | <a href='#rules' target='_blank' title='twitter'>CONTEST RULES &amp; LEGAL</a></p>
+            </footer>  
+        </div>
+
+
+        <!-- load angular and angular route via CDN -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.14/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/jquery.cookie.js"></script>
+        <script src="assets/js/jquery.transit.min.js"></script>
+        <script src="assets/js/modernizr-2.7.1.min.js"></script>
+
+        <!-- angular files -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-animate.min.js"></script>
+        <script src="assets/js/setup.js"></script>
+        
+        <!-- <script src="assets/js/animation-control.js"></script>  -->
+        <script src="assets/js/quiz.js"></script>
+        <script src="assets/js/sparkio-client.js"></script>
+        <script type="application/javascript">              
+            var SparkDevice;       
+             SparkDevice = new SparkAPI("53ff6c066667574823551667", "88ee5c473e6ec5650f1cbb443cb7d41ce3236016");
+             SparkDevice.callFunction("kitty");                
+        </script>        
+        <script type="text/javascript" src="http://static.ak.fbcdn.net/connect.php/js/FB.Share"></script>
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+
+    </body>
+</html>
